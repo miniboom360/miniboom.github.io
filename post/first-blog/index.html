@@ -298,7 +298,7 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./kscan -t subs_results.txt --top <span style="color:#ae81ff">1000</span> -oC kscan_port_results.csv
 </span></span></code></pre></div><p>这样，我们就得到了kscan_port_results.csv这样的列表，里边包含了端口，url，协议等信息。</p>
 <p>很好，这一轮下来基本上可以发现一些常规的端口的信息，会看到包括ssh、ftp、smtp还有mysql等等端口信息。</p>
-<p><img src="https://miniboom.cn/Users/miniboom/Desktop/miniboom/static/img/kscan.png" alt="image-20230928151634268"></p>
+<p><img src="../../static/img/image-20230928165712980.png" alt="image-20230928165712980"></p>
 <h4 id="思考-1">思考</h4>
 <p>现在我们手上已经有域名和部分ip的开放端口，以及端口指纹，是http、ssh、ftp、或者是smtp、mysql等等。</p>
 <p>数据库端口、ssh、ftp等等我们可以采取爆破的方式，如果是高危端口445之类的，我们可以使用ms0708等等进行渗透测试，不过这里我们优先处理http、https这类协议，因为它们往往部署了接口、web等系统，我们也更容易渗透出成果。</p>
@@ -313,8 +313,8 @@
 <p>因为有EHole，回答以上问题并不复杂。</p>
 <pre tabindex="0"><code>./ehole finger -l http_subdoamins.txt -o http_subdoamins_finger.xlsx
 </code></pre><p>在这里，ehole会帮助我们回答以上问题，不仅可以识别指纹，url，waf同时也可以列出需要重点关注的系统。</p>
-<p><img src="https://miniboom.cn/Users/miniboom/Desktop/miniboom/static/img/image-20230928151853304.png" alt="image-20230928151853304"></p>
-<p><img src="https://miniboom.cn/Users/miniboom/Desktop/miniboom/static/img/image-20230928151916649.png" alt="image-20230928151916649"></p>
+<p><img src="../../static/img/image-20230928165847784.png" alt="image-20230928165847784"></p>
+<p><img src="../../static/img/image-20230928165909766.png" alt="image-20230928165909766"></p>
 <h3 id="发现更多url">发现更多url</h3>
 <h4 id="操作-3">操作</h4>
 <p>现在，我们已经有了http://subdomain/, http://subdomain:port/, https://subdomain:port/形式的URL，接下来我们需要发现更多的url，可以通过爬虫，目录爆破等方式来做，不过好在有rad这个工具，可以很好的帮助我们爬取一个网站的URL，同时也会给我们发现一些接口内容信息。</p>
@@ -327,7 +327,7 @@
 </span></span></code></pre></div><p>这样经过gowitness截图之后，再启动</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plain" data-lang="plain"><span style="display:flex;"><span>./gowitness server
 </span></span></code></pre></div><p>访问127.0.0.1:7171就可以看到所有URL的截图界面，根据界面和个人的渗透经验去进行渗透。</p>
-<p><img src="https://miniboom.cn/Users/miniboom/Desktop/miniboom/static/img/image-20230928152016256.png" alt="image-20230928152016256"></p>
+<p><img src="../../static/img/image-20230928165936155.png" alt="image-20230928165936155"></p>
 <h4 id="思考-2">思考</h4>
 <p>在这一步，我们已经获得很多web页面，有的是403，有的是200，有的200界面是管理后台，有的只是展示静态页面，有的是json文件下载，有的是接口返回信息等等。</p>
 <p>到这一步，我们基本上可以进行第一轮的渗透测试了，可以挂上被动扫描器对管理后台进行弱口令检查，SQL注入尝试，也可以进行逻辑测试，接下来怎么做，完全是基本上属于个人渗透测试经验而采取不同的方式来测试，暂时不提。</p>
