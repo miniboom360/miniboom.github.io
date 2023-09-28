@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tranquilpeak on Hugo tranquilpeak theme</title>
-    <link>https://miniboom.cn/categories/tranquilpeak/</link>
-    <description>Recent content in tranquilpeak on Hugo tranquilpeak theme</description>
+    <title>showcase on Hugo tranquilpeak theme</title>
+    <link>https://miniboom.cn/categories/showcase/</link>
+    <description>Recent content in showcase on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jun 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://miniboom.cn/categories/tranquilpeak/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Jun 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://miniboom.cn/categories/showcase/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Who&#39;s using Tranquilpeak Hugo Theme</title>
       <link>https://miniboom.cn/post/who-is-using-tranquilpeak-hugo-theme/</link>
