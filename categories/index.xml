@@ -26,20 +26,29 @@
     </item>
     
     <item>
-      <title>showcase</title>
-      <link>https://miniboom.cn/categories/showcase/</link>
-      <pubDate>Sun, 14 Jun 2015 00:00:00 +0000</pubDate>
+      <title>releases</title>
+      <link>https://miniboom.cn/categories/releases/</link>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://miniboom.cn/categories/showcase/</guid>
+      <guid>https://miniboom.cn/categories/releases/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tranquilpeak</title>
       <link>https://miniboom.cn/categories/tranquilpeak/</link>
-      <pubDate>Sun, 14 Jun 2015 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
       
       <guid>https://miniboom.cn/categories/tranquilpeak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>showcase</title>
+      <link>https://miniboom.cn/categories/showcase/</link>
+      <pubDate>Sun, 14 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://miniboom.cn/categories/showcase/</guid>
       <description></description>
     </item>
     
