@@ -55,6 +55,12 @@
     
   
   
+    
+      <meta property="article:tag" content="web3渗透测试">
+    
+      <meta property="article:tag" content="信息收集">
+    
+  
 
 
 <meta name="twitter:card" content="summary">
@@ -322,14 +328,14 @@
 <h3 id="发现更多url">发现更多url</h3>
 <h4 id="操作-3">操作</h4>
 <p>现在，我们已经有了http://subdomain/, http://subdomain:port/, https://subdomain:port/形式的URL，接下来我们需要发现更多的url，可以通过爬虫，目录爆破等方式来做，不过好在有rad这个工具，可以很好的帮助我们爬取一个网站的URL，同时也会给我们发现一些接口内容信息。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plain" data-lang="plain"><span style="display:flex;"><span>./rad --url-file http_subdomains.txt --text-output http_subdomains_urls.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./rad --url-file http_subdomains.txt --text-output http_subdomains_urls.txt
 </span></span></code></pre></div><p>然后我们的发现了大量的URL，有的是接口的url，有待后续发现参数进行渗透测试，有的可能是敏感信息，比如.json等等，总之，现在我们已经有了不同子域名+端口+path路径的URL。</p>
 <h3 id="url截图">URL截图</h3>
 <h4 id="操作-4">操作</h4>
 <p>经过以上操作，我们已经有了大量的URL，我们需要查看哪些是管理后台登陆界面类，哪些是敏感信息，哪些是静态页面等等，所以我们需要对以上URL进行截图，这里我使用gowitness来操作。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plain" data-lang="plain"><span style="display:flex;"><span>./gowitness file -f ../findjs_url/http_subdomains_urls_without_http.txt -t 200
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./gowitness file -f ../findjs_url/http_subdomains_urls_without_http.txt -t <span style="color:#ae81ff">200</span>
 </span></span></code></pre></div><p>这样经过gowitness截图之后，再启动</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plain" data-lang="plain"><span style="display:flex;"><span>./gowitness server
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./gowitness server
 </span></span></code></pre></div><p>访问127.0.0.1:7171就可以看到所有URL的截图界面，根据界面和个人的渗透经验去进行渗透。</p>
 <p><img src="https://miniboom.cn/img/image-20230928172324586.png" alt="image-20230928172324586"></p>
 <h4 id="思考-2">思考</h4>
@@ -343,6 +349,18 @@
           </div>
           <div id="post-footer" class="post-footer main-content-wrap">
             
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://miniboom.cn/tags/web3%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/">web3渗透测试</a>
+
+  <a class="tag tag--primary tag--small" href="https://miniboom.cn/tags/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/">信息收集</a>
+
+                  </div>
+                
               
             
             
