@@ -6,7 +6,16 @@
     <description>Recent content on miniboom&#39;s tech world</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Sep 2023 13:57:04 +0800</lastBuildDate><atom:link href="https://miniboom.cn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Oct 2023 13:56:12 +0800</lastBuildDate><atom:link href="https://miniboom.cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于我-2023版</title>
+      <link>https://miniboom.cn/post/aboutmythink/</link>
+      <pubDate>Mon, 02 Oct 2023 13:56:12 +0800</pubDate>
+      
+      <guid>https://miniboom.cn/post/aboutmythink/</guid>
+      <description>&lt;p&gt;一枚资深黄色笑话爱好者，脱离了高级趣味的人，热爱自由，会写代码，会渗透测试，最主要的，会开车。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>How to Perform Effective Web3 Penetration Testing-Gathering Information (1)</title>
       <link>https://miniboom.cn/post/newar/</link>
