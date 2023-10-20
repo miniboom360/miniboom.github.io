@@ -6,7 +6,16 @@
     <description>Recent content on miniboom&#39;s tech world</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Oct 2023 15:55:59 +0800</lastBuildDate><atom:link href="https://miniboom.cn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Oct 2023 15:30:38 +0800</lastBuildDate><atom:link href="https://miniboom.cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fishing</title>
+      <link>https://miniboom.cn/post/fishing/</link>
+      <pubDate>Fri, 06 Oct 2023 15:30:38 +0800</pubDate>
+      
+      <guid>https://miniboom.cn/post/fishing/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>如何经营个人网站</title>
       <link>https://miniboom.cn/post/write_something_useful/</link>
@@ -49,6 +58,24 @@
       <description>&lt;blockquote&gt;
 &lt;p&gt;我们经常可以听到，在进行渗透测试时，信息收集是第一步，也是最为关键的一步！没错，在web3领域渗透测试，这一点也不例外。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://miniboom.cn/post/%E9%92%93%E9%B1%BC%E6%BC%94%E7%BB%83%E7%9A%84%E6%B5%81%E7%A8%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://miniboom.cn/post/%E9%92%93%E9%B1%BC%E6%BC%94%E7%BB%83%E7%9A%84%E6%B5%81%E7%A8%8B/</guid>
+      <description>钓鱼演练的流程
+软硬件准备(gophish+邮件服务器+云主机) =&amp;gt; 绕过安全防护 =&amp;gt; 钓鱼文本 =&amp;gt; 钓鱼网站搭建 =&amp;gt; 钓鱼邮件附件 =&amp;gt; 进行数据展示。
+1、gophish+邮件服务器，gophish用于伪造钓鱼网站和统计点击钓鱼链接，点击钓鱼邮件附件等数据；邮件服务器用于批量发送邮件。
+2、判断是否有邮件网关服务器、SPF、DKIM、DMARC安全防御策略，如果有，需要通过技术手段进行绕过，不然会被投入到垃圾邮件和拒收。
+3、钓鱼文本内容，准备文案，获取受害者的信任和促使他们点击。
+4、钓鱼网站展示，准备一个和谎称正常页面高度相似的网站，必要时配备高仿度域名以迷惑受害者
+5、钓鱼邮件附件，准备一个过免杀的恶意exe（绕过360，火绒安全，卡巴斯基等杀毒软件的封锁），让受害者点击后可以被记录到机器和用户名，用于统计次数哪些用户，点击了恶意exe
+6、通过gophish进行展示，有哪些用户是点击了钓鱼链接，哪些访问了钓鱼网站并留下了信息，哪些是点击了附件。
+我们这边需要部署钓鱼平台，需要解开25端口限制，以批量发送邮件
+机器信息： 机器1 ip：43.198.94.41 实例ID：i-08c2cdc77eba4eb35 机器2 ip：16.162.255.89 实例ID：i-0f22c40530bb593a0</description>
     </item>
     
   </channel>
